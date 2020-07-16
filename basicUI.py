@@ -47,6 +47,15 @@ class MainWindow:
 		(self.selectionA_Type).grid(row=1, column=0)
 		(self.selectionA_Entry).grid(row=1, column=1)
 
+		selectionB = StringVar(root)
+		selectionB.set(self.OPTIONS_template[0])
+
+		self.selectionB_Type = OptionMenu(root, selectionB, *self.OPTIONS_template)
+		self.selectionB_Entry = Entry(root)
+
+		(self.selectionB_Type).grid(row=2, column=0)
+		(self.selectionB_Entry).grid(row=2, column=1)
+
 		root.mainloop()
 
 mw = MainWindow()

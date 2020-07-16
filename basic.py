@@ -7,8 +7,8 @@ import json
 from main import ReferenceNumbers
 from data import ref
 
-Lighting_Condition = "Cloudy"
-Selected_ISO = "100"
+Lighting_Condition = "Overcast"
+Selected_ISO = "800"
 Selected_ShutterSpeed = "1/2000"
 Selected_Aperture = ""
 SelectedSettings = {"Lighting":Lighting_Condition, "ISO":Selected_ISO, "Shutter":Selected_ShutterSpeed, "Aperture":Selected_Aperture}
