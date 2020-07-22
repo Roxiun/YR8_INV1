@@ -16,8 +16,9 @@ SelectedSettings = {"Lighting":Lighting_Condition, "ISO":Selected_ISO, "Shutter"
 ReferenceHandler = ReferenceNumbers()
 ReferenceValues = ReferenceHandler.getAllReferenceValues(SelectedSettings)
 
-RequiredAverage = ReferenceHandler.getRequiredAverage(Lighting_Condition)
 CurrentAverage = sum(ReferenceValues.values())
+RequiredAverage = 16
+
 
 SelectedValue = RequiredAverage-CurrentAverage
 
