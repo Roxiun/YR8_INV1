@@ -4,7 +4,7 @@ import math
 import json
 # Standard imports
 
-from data import modes, ref
+from utils.data import modes, ref
 
 class ReferenceNumbers:
 	def __init__(self):

@@ -4,8 +4,8 @@ import math
 import json
 # Standard Imports + Math Import
 
-from main import ReferenceNumbers
-from data import ref
+from utils.main import ReferenceNumbers
+from utils.data import ref
 
 Lighting_Condition = "Overcast"
 Selected_ISO = "800"
