@@ -8,8 +8,8 @@ from utils.main import ReferenceNumbers
 from utils.data import ref
 
 Lighting_Condition = "Lightly Cloudy"
-Selected_ISO = "1600"
-Selected_ShutterSpeed = "1/2000"
+Selected_ISO = "400"
+Selected_ShutterSpeed = "1/125"
 Selected_Aperture = ""
 SelectedSettings = {"Lighting":Lighting_Condition, "ISO":Selected_ISO, "Shutter":Selected_ShutterSpeed, "Aperture":Selected_Aperture}
 
