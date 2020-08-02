@@ -3,19 +3,19 @@
       "Lighting":"-",
       "ISO":"6400",
       "Shutter":"1/30",
-      "Aperture":"2.0"
+      "Aperture":"2"
    },
    "7":{
       "Lighting":"Snow/Sand",
       "ISO":"3200",
       "Shutter":"1/60",
-      "Aperture":"2.8"
+      "Aperture":"2"
    },
    "6":{
       "Lighting":"Sunny",
       "ISO":"1600",
       "Shutter":"1/125",
-      "Aperture":"4.0"
+      "Aperture":"4"
    },
    "5":{
       "Lighting":"Lightly Cloudy",
@@ -27,7 +27,7 @@
       "Lighting":"Cloudy",
       "ISO":"400",
       "Shutter":"1/500",
-      "Aperture":"8.0"
+      "Aperture":"8"
    },
    "3":{
       "Lighting":"Overcast",

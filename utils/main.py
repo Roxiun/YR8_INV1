@@ -31,12 +31,26 @@ class ReferenceNumbers:
 			tempDict[setting] = self.getReferenceValue(UserDict[setting])
 		return tempDict
 	
-	def isValid(self, UserInput):
-		for number in ref:
-			for key in ref[number]:
-				if ref[number][key] == UserInput:
+	def isValid(self, UserInput, UserType = None):
+		if not UserType:
+			for number in ref:
+				for key in ref[number]:
+					if ref[number][key] == UserInput:
+						return True
+			return False
+		else:
+			UserInput = UserInput.replace("ISO ", "")
+			UserType = UserType.replace(" Speed", "")
+			UserType = UserType.replace(" Condition", "")
+			if UserType == "Shutter":
+				UserInput = UserInput.replace("s", "")
+			print(f"Type: {UserType} Value: {UserInput}")
+			for number in ref:
+				if ref[number][UserType] == UserInput:
+					print("Is Valid")
 					return True
-		return False
+			return False
+
 
 
 class CameraModes:
