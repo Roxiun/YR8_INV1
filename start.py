@@ -26,7 +26,7 @@ class StartUi(QtWidgets.QMainWindow):
         self.show()
     
     def start_program(self):
-        os.system(f"{sys.executable} program.py")
+        os.system(f"{sys.executable} python/program.py")
     
 
 app = QtWidgets.QApplication(sys.argv)

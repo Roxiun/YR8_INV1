@@ -44,10 +44,8 @@ class ReferenceNumbers:
 			UserType = UserType.replace(" Condition", "")
 			if UserType == "Shutter":
 				UserInput = UserInput.replace("s", "")
-			print(f"Type: {UserType} Value: {UserInput}")
 			for number in ref:
 				if ref[number][UserType] == UserInput:
-					print("Is Valid")
 					return True
 			return False
 
