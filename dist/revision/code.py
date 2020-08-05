@@ -25,7 +25,7 @@ for item in all_inputs:
         isValid = False
         while not isValid:
             user_in = input(f"Enter your selected setting for {item.title()}: ")
-            user_in = user_in.title().replace("f/" ,"").replace(".0", "")
+            user_in = user_in.title().replace("F/" ,"").replace(".0", "")
             isValid = any(user_in in d.values() for d in reference_numbers.values())
         inputs[item] = user_in
         # Keep looping until a valid input is provided
