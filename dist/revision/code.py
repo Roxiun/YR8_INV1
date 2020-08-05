@@ -1,5 +1,3 @@
-import math 
-# Imports math functions
 reference_numbers = {"1":{"Lighting":"Dusk","Iso":"50","Shutter":"1/4000","Aperture":"22"},"2":{"Lighting":"Sunset/Shade","Iso":"100","Shutter":"1/2000","Aperture":"16"},"3":{"Lighting":"Overcast","Iso":"200","Shutter":"1/1000","Aperture":"11"},"4":{"Lighting":"Cloudy","Iso":"400","Shutter":"1/500","Aperture":"8"},"5":{"Lighting":"Lightly Cloudy","Iso":"800","Shutter":"1/250","Aperture":"5.6"},"6":{"Lighting":"Sunny","Iso":"1600","Shutter":"1/125","Aperture":"4"},"7":{"Lighting":"Snow/Sand","Iso":"3200","Shutter":"1/60","Aperture":"2"},"8":{"Lighting":"-","Iso":"6400","Shutter":"1/30","Aperture":"2"}}
 # Creates a dictionary that holds all the reference Numbers
 all_inputs = ["lighting", "iso", "shutter", "aperture"]
