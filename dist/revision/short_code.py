@@ -10,7 +10,7 @@ def getReferenceValue(UserInput):
 user_selected = input("Enter that setting you want the program to recommend: ")
 while not user_selected.lower().replace("lighting condition", "lighting").replace("shutter speed", "shutter") in all_inputs: print("Thats not a valid condition"); user_selected = input("Enter that setting you want the program to recommend: ")  # Makes sure the user inputs a valid input
 for item in all_inputs:
-    if item == user_selected.lower(): pass # Dont ask for the setting the user is asking to recommend
+    if item == user_selected.lower().replace("lighting condition", "lighting").replace("shutter speed", "shutter"): pass # Dont ask for the setting the user is asking to recommend
     else:
         isValid = False
         while not isValid:

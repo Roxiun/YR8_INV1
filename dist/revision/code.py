@@ -19,7 +19,7 @@ while not user_selected.lower().replace("lighting condition", "lighting").replac
     # Makes sure the user inputs a valid input
 inputs = {} # Creates a dictionary for the inputs
 for item in all_inputs:
-    if item == user_selected.lower():
+    if item == user_selected.lower().replace("lighting condition", "lighting").replace("shutter speed", "shutter"):
         pass # Dont ask for the setting the user is asking to recommend
     else:
         isValid = False
