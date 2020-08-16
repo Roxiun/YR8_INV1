@@ -22,11 +22,15 @@ class StartUi(QtWidgets.QMainWindow):
 
         self.progam_button = self.findChild(QtWidgets.QCommandLinkButton, 'program_button')
         self.progam_button.clicked.connect(self.start_program)
+        self.auto_button = self.findChild(QtWidgets.QCommandLinkButton, 'automatic_button')
+        self.auto_button.clicked.connect(self.start_auto)
 
         self.show()
     
     def start_program(self):
         os.system(f"{sys.executable} python/program.py")
+    def start_auto(self):
+        os.system(f"{sys.executable} python/auto.py")
     
 
 app = QtWidgets.QApplication(sys.argv)

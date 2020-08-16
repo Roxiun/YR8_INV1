@@ -29,5 +29,5 @@ if modes_aliases[selected_mode.lower()] == "regular" or modes_aliases[selected_m
         while not semi_select in semi_modes: semi_select = input("Which Automatic Mode do you want (Portrait or Sports): ").lower()
         if semi_select == "portrait": res['iso'] = res['iso']-4; res['aperture'] = res['aperture']+4
         else: res['iso'] = res['iso']+1; res['aperture'] = res['aperture']+1; res['shutter'] = res['shutter']-1
-        for result in res: print(f"Required {inputs_aliases[result.lower()]} value of: {reference_numbers[str(res[result])][result.title()]}")
+        exec("""\ntry:\n    for result in res: print(f"Required {inputs_aliases[result.lower()]} value of: {reference_numbers[str(res[result])][result.title()]}")\nexcept:\n    print(f"Invalid Setting for {inputs_aliases[result.lower()]} was entered")\n""")
 else: print("Semi-Automatic not dont yet sorry! :(")
