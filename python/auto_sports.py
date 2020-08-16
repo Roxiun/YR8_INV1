@@ -18,7 +18,7 @@ class ProgramUi(QtWidgets.QMainWindow):
     def __init__(self):
         '''View Initialisation'''
         super(ProgramUi, self).__init__()
-        uic.loadUi('app/semi_sports.ui', self)
+        uic.loadUi('app/auto_sports.ui', self)
         self.setWindowTitle('Photography Program')
         # Initalises the window from the .ui file
         self.OPTIONS = ["Lighting Condition", "ISO", "Shutter Speed", "Aperture"]
@@ -121,7 +121,7 @@ class ProgramUi(QtWidgets.QMainWindow):
                                 self.result_lighting.setText(f"<b>Lighting Condition:</b> {tdict[item]}")
                             print(av)
                         except:
-                            self.show_error(f"Invalid Settings for ISO/Aperture/Shuttter was given")
+                            self.show_error("Invalid Setting", f"Invalid Settings for ISO/Aperture/Shuttter was given")
                     else:
                         if item == "ISO":
                             self.result_iso.setText(f"<b>{item}:</b> None")

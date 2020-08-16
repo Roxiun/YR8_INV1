@@ -4,12 +4,13 @@ import math
 import json
 # Standard Imports + Math Import
 
+sys.path.insert(1, os.path.join(sys.path[0], '..'))
+# Make File run form the high directory
+
 from utils.main import ReferenceNumbers
 from utils.data import ref
 # Code Handler Imports
 
-sys.path.insert(1, os.path.join(sys.path[0], '..'))
-# Make File run form the high directory
 
 # PyQt5 (UI Framework) Imports
 from PyQt5 import QtWidgets, uic, QtGui

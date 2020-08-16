@@ -120,7 +120,7 @@ class ProgramUi(QtWidgets.QMainWindow):
                                 self.result_lighting.setText(f"<b>Lighting Condition:</b> {tdict[item]}")
                             print(av)
                         except:
-                            self.show_error(f"Invalid Settings for ISO/Aperture was given")
+                            self.show_error("Invalid Setting", f"Invalid Settings for ISO/Aperture was given")
                     else:
                         if item == "ISO":
                             self.result_iso.setText(f"<b>{item}:</b> None")
