@@ -24,6 +24,8 @@ class StartUi(QtWidgets.QMainWindow):
         self.progam_button.clicked.connect(self.start_program)
         self.auto_button = self.findChild(QtWidgets.QCommandLinkButton, 'automatic_button')
         self.auto_button.clicked.connect(self.start_auto)
+        self.semi_button = self.findChild(QtWidgets.QCommandLinkButton, 'priority_button')
+        self.semi_button.clicked.connect(self.start_semi)
 
         self.show()
     
@@ -31,6 +33,8 @@ class StartUi(QtWidgets.QMainWindow):
         os.system(f"{sys.executable} python/program.py")
     def start_auto(self):
         os.system(f"{sys.executable} python/auto.py")
+    def start_semi(self):
+        os.system(f"{sys.executable} python/semi.py")
     
 
 app = QtWidgets.QApplication(sys.argv)

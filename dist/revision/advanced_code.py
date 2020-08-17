@@ -30,4 +30,4 @@ if modes_aliases[selected_mode.lower()] == "regular" or modes_aliases[selected_m
         if semi_select == "portrait": res['iso'] = res['iso']-4; res['aperture'] = res['aperture']+4
         else: res['iso'] = res['iso']+1; res['aperture'] = res['aperture']+1; res['shutter'] = res['shutter']-1
         exec("""\ntry:\n    for result in res: print(f"Required {inputs_aliases[result.lower()]} value of: {reference_numbers[str(res[result])][result.title()]}")\nexcept:\n    print(f"Invalid Setting for {inputs_aliases[result.lower()]} was entered")\n""")
-else: print("Semi-Automatic not dont yet sorry! :(")
+else: print("Semi-Automatic not done yet sorry! :(")

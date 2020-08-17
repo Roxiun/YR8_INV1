@@ -20,21 +20,21 @@ class StartUi(QtWidgets.QMainWindow):
     def __init__(self):
         '''View Initialisation'''
         super(StartUi, self).__init__()
-        uic.loadUi('app/semi.ui', self)
+        uic.loadUi('app/auto.ui', self)
         self.setWindowTitle('Photography Program')
         # Initialises the window
 
-        self.portrait_button = self.findChild(QtWidgets.QCommandLinkButton, 'portrait_button')
-        self.portrait_button.clicked.connect(self.start_portrait)
-        self.sports_button = self.findChild(QtWidgets.QCommandLinkButton, 'sports_button')
-        self.sports_button.clicked.connect(self.start_sports)
+        self.aperture_button = self.findChild(QtWidgets.QCommandLinkButton, 'aperture_button')
+        self.aperture_button.clicked.connect(self.start_aperture)
+        self.shutter_button = self.findChild(QtWidgets.QCommandLinkButton, 'shutter_button')
+        self.shutter_button.clicked.connect(self.start_shutter)
 
         self.show()
     
-    def start_portrait(self):
-        os.system(f"{sys.executable} python/auto_portrait.py")
-    def start_sports(self):
-        os.system(f"{sys.executable} python/auto_sports.py")
+    def start_aperture(self):
+        os.system(f"{sys.executable} python/semi_aperture.py")
+    def start_shutter(self):
+        os.system(f"{sys.executable} python/semi_shutter.py")
     
 
 app = QtWidgets.QApplication(sys.argv)
