@@ -33,7 +33,7 @@ res = getResult(inputs)
 # Gets refence numbers of the inputs
 req_ref = 16 - sum(res.values())
 # Subtracts the sum of the reference numbers from 16 (Sunny 16 Rule) to get the last reference number
-if req_ref > 0 and req_ref <= 8: print(f"Required {inputs_aliases[user_selected.lower()} Value: {reference_numbers[str(req_ref)][user_selected.lower().replace('lighting condition', 'lighting').replace('shutter speed', 'shutter').title()]}")
+if req_ref > 0 and req_ref <= 8: print(f"Required {inputs_aliases[user_selected.lower()]} Value: {reference_numbers[str(req_ref)][user_selected.lower().replace('lighting condition', 'lighting').replace('shutter speed', 'shutter').title()]}")
 elif req_ref < 0: print(f"Too Bright - Change of {(req_ref - 1)*(-1)} stops is required")
 elif req_ref > 8: print(f"Too Dark - Change of {req_ref - 8} stops is required")
 elif req_ref == 0: print(f"You need to change you settings by at least 1 stop")
