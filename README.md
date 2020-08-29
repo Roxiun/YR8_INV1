@@ -1,5 +1,5 @@
 ## Coding Investigation 1 2020
-
+Full tutorial comming soon!
 ## DISCLAMER
 I am not reponsible for anything you do with this code. It is for educational purposes only.
 
